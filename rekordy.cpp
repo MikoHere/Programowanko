@@ -2,7 +2,7 @@
 #include <string.h>
 using namespace std;
 
-typedef struct osoba{
+struct osoba{
       string imie, nazwisko, klasa;
       double srednia;
       int wiek;
