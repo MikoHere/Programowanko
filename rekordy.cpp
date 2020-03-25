@@ -3,9 +3,9 @@
 using namespace std;
 
 struct osoba{
-      string imie, nazwisko, klasa;
-      double srednia;
-      int wiek;
+    string imie, nazwisko, klasa;
+    double srednia;
+    int wiek;
 };
 
 void wypisz (struct osoba a){
@@ -23,12 +23,12 @@ int main(){
  	uczen1.klasa="1GT";
  	uczen1.srednia =3.00;
 	uczen1.wiek = 21;	
-	uczen2.imie = "Marcin";
+	uczen2.imie = "\nMarcin";
  	uczen2.nazwisko ="Nowak";
  	uczen2.klasa="2GT";
  	uczen2.srednia =5.27;
 	uczen2.wiek = 22;	
-	uczen3.imie = "Justyna";
+	uczen3.imie = "\nJustyna";
  	uczen3.nazwisko ="Wysocka";
  	uczen3.klasa="3GT";
  	uczen3.srednia =4.48;
