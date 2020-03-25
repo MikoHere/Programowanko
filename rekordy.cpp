@@ -8,7 +8,7 @@ struct osoba{
       int wiek;
 };
 
-void uczen (osoba a){
+void wypisz (struct osoba a){
 	cout<<a.imie<<endl;
 	cout<<a.nazwisko<<endl;
 	cout<<a.klasa<<endl;
@@ -34,9 +34,9 @@ int main(){
  	uczen3.srednia =4.48;
 	uczen3.wiek = 23;
 	
-	uczen (uczen1);
-	uczen (uczen2);
-	uczen (uczen3);
+	wypisz (uczen1);
+	wypisz (uczen2);
+	wypisz (uczen3);
 
 
 return 0;
