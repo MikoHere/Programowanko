@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string.h>
+#include <string>
 using namespace std;
 
 struct osoba{
@@ -17,22 +17,11 @@ void wypisz (struct osoba a){
 }
 
 int main(){
-	osoba uczen1, uczen2, uczen3;
-	uczen1.imie = "Adam";
- 	uczen1.nazwisko ="Kowalski";
- 	uczen1.klasa="1GT";
- 	uczen1.srednia =3.00;
-	uczen1.wiek = 21;	
-	uczen2.imie = "\nMarcin";
- 	uczen2.nazwisko ="Nowak";
- 	uczen2.klasa="2GT";
- 	uczen2.srednia =5.27;
-	uczen2.wiek = 22;	
-	uczen3.imie = "\nJustyna";
- 	uczen3.nazwisko ="Wysocka";
- 	uczen3.klasa="3GT";
- 	uczen3.srednia =4.48;
-	uczen3.wiek = 23;
+	osoba uczen1={"Adam", "Kowalski", "1GT", 3.00, 21};
+	
+	osoba uczen2={"\nMarcin", "Nowak", "2GT", 5.27, 22};
+	
+	osoba uczen3={"\nJustyna", "Wysocka", "3GT", 4.48, 23};
 	
 	wypisz (uczen1);
 	wypisz (uczen2);
