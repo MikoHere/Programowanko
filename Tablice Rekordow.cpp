@@ -24,28 +24,16 @@ int main()
 	{
 		cout<<"Podaj tytul filmu: ";
 		cin>>t[i].tytul;
-	}
-	
-	for(int i=0; i<5; i++)
-	{
+		
 		cout<<"Podaj rezysera filmu: ";
 		cin>>t[i].rezyser;
-	}
-	
-	for(int i=0; i<5; i++)
-	{
+		
 		cout<<"Podaj gatuenk filmu: ";
 		cin>>t[i].gatunek;
-	}
-	
-	for(int i=0; i<5; i++)
-	{
+		
 		cout<<"Rok utworzenia filmu: ";
 		cin>>t[i].rok;
-	}
-	
-	for(int i=0; i<5; i++)
-	{
+		
 		cout<<"Czas trwania filmu (w minutach): ";
 		cin>>t[i].czasTrwaniaMinut;
 	}
