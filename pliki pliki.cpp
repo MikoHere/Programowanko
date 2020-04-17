@@ -23,7 +23,7 @@ int main()
 		plik2<<" "<<t[j];
 		}
     plik.close();   
-	plik2.close();            
+    plik2.close();            
    
     return 0;
 }
