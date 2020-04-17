@@ -9,8 +9,8 @@ int main()
     
     ifstream plik;
     ofstream plik2;
-    plik.open("a.txt");
-	plik2.open("b.txt");  
+    plik.open("c:\\a.txt");
+	plik2.open("c:\\b.txt");  
     if(plik.good())
     	while(!plik.eof())        
        {
