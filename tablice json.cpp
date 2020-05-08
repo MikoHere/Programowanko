@@ -34,7 +34,7 @@ int main()
 
 
 
-    wyjscie <<"[ \n { \n \"Min\" : \" "<< min;
+    wyjscie <<"[ \n { \n \"Min\" : \" "<< min<<"\"} \n ] \n";
          
     wejscie.close();
     wyjscie.close();
