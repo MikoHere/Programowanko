@@ -33,14 +33,12 @@ int main()
 
 
 
-         wyjscie <<"[ \n { \n \"Min\" : \" "<< min;
+    wyjscie <<"[ \n { \n \"Min\" : \" "<< min;
          
-         wejscie.close();
-         wyjscie.close();
+    wejscie.close();
+    wyjscie.close();
          
          
-         return 0;
+    return 0;
 
-
-                
 }
