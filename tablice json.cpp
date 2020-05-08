@@ -5,17 +5,17 @@ using namespace std;
 int main()
 {
 	
-	ifstream wejscie;
-	ofstream wyjscie;
-	wejscie.open ("a.txt");
-	wyjscie.open ("b.json", ios::out | ios::app);
+    ifstream wejscie;
+    ofstream wyjscie;
+    wejscie.open ("a.txt");
+    wyjscie.open ("b.json", ios::out | ios::app);
 	
-	int t[10];
-	int min=t[0];
+    int t[10];
+    int min=t[0];
 	
-	if (wejscie.good()) 
+    if (wejscie.good()) 
 	
-	{
+    	{
         while(!wejscie.eof())
 
         	for(int i=0; i<10; i++)
@@ -25,9 +25,10 @@ int main()
                 
                 
     for(int i=0; i<10; i++)
-	{
-
-        if(min>t[i])
+	
+    	{
+	if(min>t[i])
+		
        	min=t[i];
 	}
 
