@@ -1,50 +1,25 @@
 #include <iostream>
-#include <bitset>
+#include <iomanip>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
 using namespace std;
-
-string dec2bin(int dziesietna) {
-        
-        int d;
-        string znak;
-        if(dziesietna > 0) {
-                d = dziesietna;
-                znak = "";
-        } else {
-                d = dziesietna * -1; 
-                znak = "-";
-        }
-       
-        string binary = bitset<8>(d).to_string(); 
-       
-        binary.erase(0, min(binary.find_first_not_of('0'), binary.size()-1)); 
-       
-        binary = znak + binary; 
-
-        return binary;
-}
 
 int main(int argc, char** argv) {
 	
-	int a,b;
+int red = 0xff0000;
+int green = 0x00ff00;
+int blue = 0x0000ff;
 
-	
-	cout<<"podaj liczbe a:";
-	cin>>a;
-	cout<<"podaj liczbe b:";
-	cin>>b;
-	
-	string bin_a=dec2bin(a);
-	string bin_b=dec2bin(b);
-	
-	cout<<bin_a<<" "
-	<<bin_b<<endl;
-	
-	cout<<(a|b)<<", "
-	<<(a&b)<<", "
-	<<(a^b)<<endl;
+int kolor1=0x123456;
+int kolor2=0x123456;
+int kolor3=0x123456;
+
+
+
+
+cout<<hex<<((kolor1& 0xff0000)>>16)<<"\n";
+cout<<hex<<((kolor2& 0x00ff00)>>8)<<"\n";
+cout<<hex<<((kolor3& 0x0000ff));
 	
 	return 0;
 }
